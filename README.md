@@ -68,3 +68,7 @@ java -jar \path\to\runtime\file\quadratic-equation-solver-cli.jar \path\to\file\
 ## How should the .txt file look like
 
 When the application is in non-interactive mode it expects a single argument that specifies the path to the file containing the coefficients of the equation. The file should have three numbers separated by a single space, representing the coefficients a, b, and c of the equation. Here's an example of how the numbers should be formatted in the file. [_look_here_](https://github.com/AKushch1337/SDMaT-lab1/tree/main/TestFiles)
+
+## Link to revert commit
+
+[link](https://github.com/AKushch1337/SDMaT-lab1/commit/02fca5a0b58b6f19afb5205c06c4a494c0012570)
