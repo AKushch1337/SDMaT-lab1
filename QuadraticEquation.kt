@@ -2,6 +2,17 @@ import java.io.File
 import kotlin.math.sqrt
 import kotlin.system.exitProcess
 
+fun readDouble(message: String): Double {
+    while (true) {
+        print(message)
+        val input = readlnOrNull()?.toDoubleOrNull()
+        if (input != null) {
+            return input
+        }
+        println("Error. Expected a valid real number")
+    }
+}
+
 fun nonInteractiveMode(args: Array<String>) {
     val filename = args[0]
     val file = File(filename)
