@@ -41,7 +41,9 @@ kotlinc *.kt -include-runtime -d quadratic-equation-solver-cli.jar
 
 > **_NOTE:_**  You can replace ```quadratic-equation-solver-cli``` with whatever name you want
 
-## Run the project
+## Download the runtime file
 
-- 
+- Download [_here_](https://github.com/AKushch1337/SDMaT-lab1/releases/download/1.0.0/quadratic-equation-solver-cli.jar).
+
+
 
