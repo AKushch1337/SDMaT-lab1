@@ -2,6 +2,11 @@ import java.io.File
 import kotlin.math.sqrt
 import kotlin.system.exitProcess
 
+fun main(args: Array<String> = arrayOf()) {
+    if (args.isEmpty()) interactiveMode()
+    else nonInteractiveMode(args)
+}
+
 fun interactiveMode() {
     var a: Double
     do {
@@ -49,7 +54,7 @@ fun nonInteractiveMode(args: Array<String>) {
         println("Error: 'a' coefficient cannot be zero")
         exitProcess(1)
     } else if (a == null || b == null || c == null) {
-        println("Error. Expected a valid real number, got $input instead")
+        println("Error. Expected a valid real number")
         exitProcess(1)
     }
     solveQuadraticEquation(a, b, c)
