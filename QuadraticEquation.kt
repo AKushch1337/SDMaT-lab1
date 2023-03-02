@@ -2,6 +2,19 @@ import java.io.File
 import kotlin.math.sqrt
 import kotlin.system.exitProcess
 
+fun interactiveMode() {
+    var a: Double
+    do {
+        a = readDouble("a = ")
+        if (a == 0.0) {
+            println("Error: 'a' coefficient cannot be zero")
+        }
+    } while (a == 0.0)
+    val b = readDouble("b = ")
+    val c = readDouble("c = ")
+    solveQuadraticEquation(a, b, c)
+}
+
 fun readDouble(message: String): Double {
     while (true) {
         print(message)
