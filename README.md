@@ -6,7 +6,7 @@
 -------------------------------
 ## Setup
 
-- Download Kotlin compiler [_click here_](https://github.com/JetBrains/kotlin/releases/download/v1.8.10/kotlin-compiler-1.8.10.zip)
+- Download Kotlin compiler [_here_](https://github.com/JetBrains/kotlin/releases/download/v1.8.10/kotlin-compiler-1.8.10.zip)
 
 - Extract the archive on your computer
 
@@ -24,4 +24,24 @@ kotlinc -version
 ```
 
 ## Build the project
+
+- Clone the project on your computer.
+
+```cmd
+git clone https://github.com/AKushch1337/SDMaT-lab1
+```
+
+- Move into the folder where you cloned the project 
+
+- Open the command prompt (CMD) and run the following command:
+
+```cmd
+kotlinc *.kt -include-runtime -d quadratic-equation-solver-cli.jar
+```
+
+> **_NOTE:_**  You can replace ```quadratic-equation-solver-cli``` with whatever name you want
+
+## Run the project
+
+- 
 
