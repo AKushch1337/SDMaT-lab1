@@ -23,6 +23,8 @@ setx /M PATH "%PATH%;C:\path\to\kotlin\bin"
 kotlinc -version
 ```
 
+- Verify that you have Java Runtime Environment(JRE) on your computer
+
 ## Build the project
 
 - Clone the project on your computer.
@@ -41,9 +43,24 @@ kotlinc *.kt -include-runtime -d quadratic-equation-solver-cli.jar
 
 > **_NOTE:_**  You can replace ```quadratic-equation-solver-cli``` with whatever name you want
 
-## Download the runtime file
+- This will generate .jar file which you can run using Java Runtime Environment(JRE)
+
+> **_NOTE:_**  You can skip the "Build the project" part and just download the .jar file =)
+
+## Download the .jar file
 
 - Download [_here_](https://github.com/AKushch1337/SDMaT-lab1/releases/download/1.0.0/quadratic-equation-solver-cli.jar).
 
+## Run the .jar file
 
+### In interactive mode
 
+```cmd 
+java -jar \path\to\runtime\file\quadratic-equation-solver-cli.jar
+```
+
+### In non-interactive mode
+
+```cmd 
+java -jar \path\to\runtime\file\quadratic-equation-solver-cli.jar \path\to\file\with\inputs
+```
