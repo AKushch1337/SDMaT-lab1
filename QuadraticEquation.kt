@@ -1,4 +1,35 @@
+import java.io.File
 import kotlin.math.sqrt
+import kotlin.system.exitProcess
+
+fun nonInteractiveMode(args: Array<String>) {
+    val filename = args[0]
+    val file = File(filename)
+
+    if (!file.exists()) {
+        println("File: $filename doesn't exist")
+        return
+    }
+
+    val input = file.readText().trim().split(" ")
+    if (input.size != 3) {
+        println("Invalid input in file: Expected 3 numbers, got ${input.size} numbers")
+        return
+    }
+
+    val a = input[0].toDoubleOrNull()
+    val b = input[1].toDoubleOrNull()
+    val c = input[2].toDoubleOrNull()
+
+    if (a == 0.0) {
+        println("Error: 'a' coefficient cannot be zero")
+        exitProcess(1)
+    } else if (a == null || b == null || c == null) {
+        println("Error. Expected a valid real number, got $input instead")
+        exitProcess(1)
+    }
+    solveQuadraticEquation(a, b, c)
+}
 
 fun solveQuadraticEquation(a: Double, b: Double, c: Double) {
     val discriminant = b * b - 4.0 * a * c
