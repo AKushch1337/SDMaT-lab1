@@ -2,7 +2,7 @@
 
 > The Kotlin CLI app to solve quadratic equations
 >
-> View the code [_here_](). 
+> View the code [_here_](https://github.com/AKushch1337/SDMaT-lab1/blob/main/QuadraticEquation.kt). 
 -------------------------------
 ## Setup
 
