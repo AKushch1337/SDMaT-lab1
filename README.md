@@ -24,6 +24,8 @@ setx /M PATH "%PATH%;C:\path\to\kotlin\bin"
 ```
 - Replace "C:\path\to\kotlin" with the path to the folder where you extracted the Kotlin compiler.
 
+> **_NOTE:_** You can add Kotlin bin folder to your system's PATH environment variable using Windows UI tools. Click [_here_](https://docs.oracle.com/en/database/oracle/machine-learning/oml4r/1.5.1/oread/creating-and-modifying-environment-variables-on-windows.html#GUID-DD6F9982-60D5-48F6-8270-A27EC53807D0) to see the instructions.
+
 - Verify that the Kotlin compiler is installed correctly by running the following command in the command prompt:
 
 ```cmd
