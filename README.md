@@ -4,6 +4,13 @@
 >
 > View the code [_here_](https://github.com/AKushch1337/SDMaT-lab1/blob/main/QuadraticEquation.kt). 
 -------------------------------
+## Description
+This application is designed to solve quadratic equations of the form $ax^2+bx+c=0$, where $a \neq 0$. It calculates the roots of the equation and displays them. There are two different modes available to use the application:
+
+1) Interactive mode - the application asks the user to enter the coefficients of the equation and prints the roots.
+
+2) Non-interactive mode - the application takes the coefficients from input TXT-file argument and prints the roots.
+
 ## Setup
 
 - Download Kotlin compiler [_here_](https://github.com/JetBrains/kotlin/releases/download/v1.8.10/kotlin-compiler-1.8.10.zip)
