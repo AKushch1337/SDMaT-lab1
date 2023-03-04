@@ -37,13 +37,13 @@ fun nonInteractiveMode(args: Array<String>) {
 
     if (!file.exists()) {
         println("File: $filename doesn't exist")
-        return
+        exitProcess(1)
     }
 
     val input = file.readText().trim().split(" ")
     if (input.size != 3) {
         println("Invalid input in file: Expected 3 numbers, got ${input.size} numbers")
-        return
+        exitProcess(1)
     }
 
     val a = input[0].toDoubleOrNull()
